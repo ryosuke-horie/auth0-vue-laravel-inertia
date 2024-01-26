@@ -27,8 +27,6 @@ RUN cd /usr/local/ && \
 RUN mkdir /var/run/php-fpm
 VOLUME [ "/var/run/php-fpm" ]
 
-# RUN echo 'short_open_tag = On' >> /etc/php.ini
-# RUN echo 'date.timezone = Asia/Tokyo' >> /etc/php.ini
 EXPOSE 9000
 
 ENTRYPOINT /usr/sbin/php-fpm -F
