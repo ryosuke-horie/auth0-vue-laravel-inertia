@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    // JavaScriptファイルを許可。
+    "allowJs": true,
+    // すべての厳格なタイプチェックオプションを有効にします。
+    "strict": true,
+    // vueで必須。
+    "isolatedModules": true,
+    // CommonJSモジュールとESモジュール間の相互運用性を有効にします。
+    "esModuleInterop": true,
+    // ファイル名の大文字小文字の一貫性を強制。
+    "forceConsistentCasingInFileNames": true,
+    // コンパイルの結果としてファイルを出力せず、型チェックのみを行います。
+    "noEmit": true,
+    // 宣言ファイル（*.d.ts）の型チェックをスキップします。
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./resources/js/*"]
+    },
+    "types": ["vite/client", "node"],
+    "baseUrl": "."
+  },
+  // コンパイルに含めるファイルのパターンを指定。
+  "include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue", "resources/js/ssr.js"],
+  "exclude": ["node_modules"]
+}
